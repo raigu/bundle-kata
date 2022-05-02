@@ -16,6 +16,7 @@ final class Configuration implements ConfigurationInterface
             ->children()
                 ->booleanNode('unicorns_are_real')->info('Wheter or not you believe in unicorns')->defaultTrue()->end()
                 ->integerNode('min_sunshine')->info('How much do you like sunshine?')->defaultValue(3)->end()
+                ->scalarNode('word_provider')->defaultNull()->end()
             ->end()
         ;
 
